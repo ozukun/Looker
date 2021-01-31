@@ -1,5 +1,5 @@
 view: distribution_centers {
-  sql_table_name: `ecomm.distribution_centers`
+  sql_table_name: `looker_ecomm.distribution_centers`
     ;;
   drill_fields: [id]
 

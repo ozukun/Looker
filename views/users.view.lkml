@@ -1,5 +1,5 @@
 view: users {
-  sql_table_name: `ecomm.users`
+  sql_table_name: `looker_ecomm.users`
     ;;
   drill_fields: [id]
 

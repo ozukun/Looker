@@ -1,5 +1,5 @@
 view: products {
-  sql_table_name: `ecomm.products`
+  sql_table_name: `looker_ecomm.products`
     ;;
   drill_fields: [id]
 

@@ -1,9 +1,9 @@
 view: order_items {
-  sql_table_name: `ecomm.order_items`
+  sql_table_name: `looker_ecomm.order_items`
     ;;
-  drill_fields: [id]
+  drill_fields: [order_item_id]
 
-  dimension: id {
+  dimension: order_item_id {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
@@ -94,7 +94,7 @@ view: order_items {
     sql: ${TABLE}.user_id ;;
   }
 
-  measure: count {
+  measure: count_of_ordered_items {
     type: count
     drill_fields: [detail*]
   }
@@ -102,7 +102,7 @@ view: order_items {
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [
-      id,
+      order_item_id,
       users.last_name,
       users.id,
       users.first_name,
