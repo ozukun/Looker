@@ -1,5 +1,5 @@
 view: inventory_items {
-  sql_table_name: `looker_ecomm.inventory_items`
+  sql_table_name: `cloud-training-demos.looker_ecomm.inventory_items`
     ;;
   drill_fields: [id]
 

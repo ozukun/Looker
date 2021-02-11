@@ -1,5 +1,5 @@
 view: order_items {
-  sql_table_name: `looker_ecomm.order_items`
+  sql_table_name: `cloud-training-demos.looker_ecomm.order_items`
     ;;
   drill_fields: [order_item_id]
 

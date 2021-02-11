@@ -1,5 +1,5 @@
 view: events {
-  sql_table_name: `looker_ecomm.events`
+  sql_table_name: `cloud-training-demos.looker_ecomm.events`
     ;;
   drill_fields: [id]
 

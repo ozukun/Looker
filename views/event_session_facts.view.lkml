@@ -9,7 +9,7 @@ view: event_session_facts {
           ,LAST_VALUE (created_at) OVER (PARTITION BY session_id ORDER BY created_at ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS session_end
           ,FIRST_VALUE (event_type) OVER (PARTITION BY session_id ORDER BY created_at ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS session_landing_page
           ,LAST_VALUE (event_type) OVER (PARTITION BY session_id ORDER BY created_at ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS session_exit_page
-        FROM `looker_ecomm`.events
+        FROM `cloud-training-demos.looker_ecomm.events`
       )
       SELECT * FROM session_facts
       GROUP BY 1, 2, 3, 4, 5, 6
