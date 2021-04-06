@@ -99,6 +99,18 @@ view: order_items {
     drill_fields: [detail*]
   }
 
+  measure: average_sale_price {
+    type: average
+    sql: ${sale_price} ;;
+    drill_fields: [detail*]
+    value_format_name: usd_0
+  }
+
+  measure: order_item_count {
+    type: count
+    drill_fields: [detail*]
+  }
+
   # ----- Sets of fields for drilling ------
   set: detail {
     fields: [

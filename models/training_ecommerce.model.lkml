@@ -1,7 +1,7 @@
 connection: "bigquery_public_data_looker"
 
 # include all the views
-include: "/views/**/*.view"
+include: "/views/*.view"
 include: "/z_tests/*.lkml"
 
 datagroup: training_ecommerce_default_datagroup {
