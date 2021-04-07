@@ -6,7 +6,7 @@ test: order_items_explore {
     column: count_of_centers { field: distribution_centers.count }
   }
   assert: order_items_has_data {
-    expression: ${order_items.count_of_ordered_items} > 0 ;;
+    expression: ${order_items.order_item_count} > 0 ;;
   }
   assert: users_has_data {
     expression: ${users.count} > 0 ;;
