@@ -94,10 +94,6 @@ view: order_items {
     sql: ${TABLE}.user_id ;;
   }
 
-  measure: count_of_ordered_items {
-    type: count
-    drill_fields: [detail*]
-  }
 
   measure: average_sale_price {
     type: average
@@ -110,6 +106,25 @@ view: order_items {
     type: count
     drill_fields: [detail*]
   }
+
+  measure: order_count {
+    type: count_distinct
+    sql: ${order_id} ;;
+  }
+
+  measure: total_revenue {
+    type: sum
+    sql: ${sale_price} ;;
+    value_format_name: usd
+  }
+
+  measure: total_revenue_from_completed_orders {
+    type: sum
+    sql: ${sale_price} ;;
+    filters: [status: "Complete"]
+    value_format_name: usd
+  }
+
 
   # ----- Sets of fields for drilling ------
   set: detail {
