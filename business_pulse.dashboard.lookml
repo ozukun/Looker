@@ -225,12 +225,12 @@
     type: single_value
     fields: [users.count]
     filters:
-      users.created_date: 90 days
+      users.created_date: 2020 #users.created_date: 90 days
     sorts: [order_items.order_count desc]
     limit: 500
     column_limit: 50
-    dynamic_fields: [{table_calculation: goal, label: Goal, expression: '10000', value_format: !!null '',
-        value_format_name: decimal_0, _kind_hint: dimension, _type_hint: number}]
+    dynamic_fields: [{table_calculation: goal, label: Goal, expression: '39000', value_format: !!null '',
+        value_format_name: decimal_0, _kind_hint: dimension, _type_hint: number}] #expression: '10000'
     query_timezone: America/Los_Angeles
     custom_color_enabled: true
     custom_color: ''
@@ -339,7 +339,7 @@
   - name: Date
     title: Date
     type: date_filter
-    default_value: 90 days
+    #default_value: 90 days
     allow_multiple_values: true
     required: false
     ui_config:
