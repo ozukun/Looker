@@ -12,7 +12,7 @@ datagroup: training_ecommerce_default_datagroup {
 
 persist_with: training_ecommerce_default_datagroup
 
-label: "E-Commerce Trainings"
+label: "E-Commerce Trainings and more"
 
 explore: order_items {
   join: users {
