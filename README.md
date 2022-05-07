@@ -6,3 +6,6 @@ V1.view file contains sample code for how to implement window function on Looker
 
 ![ScreenShot](https://raw.github.com/{ozukun}/{Looker}/{master}/{Capture1.PNG})
 
+
+
+<img src="https://github.com/ozukun/Looker/blob/master/Capture1.PNG" width="100" height="100"/>
