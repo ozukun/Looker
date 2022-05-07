@@ -12,7 +12,7 @@ datagroup: training_ecommerce_default_datagroup {
 
 persist_with: training_ecommerce_default_datagroup
 
-label: "E-Commerce Trainings and more"
+label: "E-Commerce Training"
 
 explore: order_items {
   join: users {
@@ -56,4 +56,10 @@ explore: events {
     sql_on: ${events.user_id} = ${users.id} ;;
     relationship: many_to_one
   }
+}
+
+explore: v1 {
+  cancel_grouping_fields:[v1.avg_cost_dist_final,v1.user_id,v1.CATEGORY,v1.avg_cost_category_final  ]
+
+
 }
