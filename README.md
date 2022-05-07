@@ -8,4 +8,4 @@ V1.view file contains sample code for how to implement window function on Looker
 
 
 
-<img src="https://github.com/ozukun/Looker/blob/master/Capture1.PNG" width="500" height="500"/>
+<img src="https://github.com/ozukun/Looker/blob/master/Capture1.PNG" width="800" height="500"/>
